@@ -7,10 +7,14 @@ public class MovementCar : MonoBehaviour
     public CharacterController characterController;
     public Transform cam;
 
+    public GameObject Player;
+
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
+
+    SwitchCar SwitchCar;
 
     // Start is called before the first frame update
     void Start()
@@ -34,5 +38,7 @@ public class MovementCar : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             characterController.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+
+        
     }
 }

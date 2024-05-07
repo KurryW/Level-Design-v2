@@ -21,23 +21,23 @@ public class SwitchCar : MonoBehaviour
 
     MovementCar MovementCar;
 
-    bool InCar;
+    public bool InCar;
     bool CanGetInTheCar = false;
 
     private void Start()
     {
-        MovementCar = GetComponent<MovementCar>();
+        MovementCar = Car.GetComponent<MovementCar>();
     }
 
     private void Update()
     {
         CanGetInCar();
 
-        if (InCar == true)
-        {
-            CanGetOutCar();
-            Debug.Log("ik kan uit de auto");
-        }
+        //if (InCar == true)
+        //{
+        //    CanGetOutCar();
+        //    Debug.Log("ik kan uit de auto");
+        //}
     }
 
     private void OnTriggerEnter(Collider ColliderCar)
@@ -59,11 +59,11 @@ public class SwitchCar : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.Q))
             {
-                gameObject.GetComponent<MovementCar>().enabled = true;
-                playerCamera.Priority = 0;
                 carCamera.Priority = 1;
                 InCar = true;
                 Player.SetActive(false);
+                UICar.SetActive(false);
+                MovementCar.enabled = true;
                 Debug.Log("ik zit in de auto");
             }
 
@@ -71,21 +71,20 @@ public class SwitchCar : MonoBehaviour
 
     }
 
-    void CanGetOutCar()
-    {
+    //void CanGetOutCar()
+    //{
 
-        if(Input.GetKey(KeyCode.E) && MovementCar.speed <= 1f) 
-        {
-            gameObject.GetComponent<MovementCar>().enabled = false;
-            playerCamera.Priority = 1;
-            carCamera.Priority = 0;
-            Player.SetActive(true);
-            UICar.SetActive(false);
-            Player.transform.position = RespawnPoint.transform.position;
-            Debug.Log("ik ga de auto uit");
-        }
+    //    if(Input.GetKey(KeyCode.A)) //&& MovementCar.speed <= 1f) 
+    //    {
+    //        playerCamera.Priority = 1;
+    //        carCamera.Priority = 0;
+    //        Player.SetActive(true);
+    //        UICar.SetActive(false);
+    //        //Player.transform.position = RespawnPoint.transform.position;
+    //        Debug.Log("ik ga de auto uit");
+    //    }
 
         
 
-    }
+    //}
 }

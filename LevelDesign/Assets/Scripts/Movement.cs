@@ -12,6 +12,8 @@ public class Movement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
+    Vector3 moveVector;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,12 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveVector = Vector3.zero;
+
+        moveVector += Physics.gravity;
+
+        characterController.Move(moveVector * Time.deltaTime);
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f,vertical).normalized;
