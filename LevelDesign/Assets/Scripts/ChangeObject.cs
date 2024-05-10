@@ -29,7 +29,10 @@ public class ChangeObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Player.activeInHierarchy == false)
+        {
+            UIChangePart.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

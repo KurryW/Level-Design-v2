@@ -14,10 +14,12 @@ public class Movement : MonoBehaviour
 
     Vector3 moveVector;
 
+    Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -41,6 +43,15 @@ public class Movement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             characterController.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
+
+        if(horizontal != 0 || vertical != 0)
+        {
+            animator.SetBool("Walk", true);
+        }
+        else
+        {
+            animator.SetBool("Walk", false);
         }
     }
 }
