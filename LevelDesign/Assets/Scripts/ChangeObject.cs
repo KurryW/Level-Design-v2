@@ -10,7 +10,9 @@ public class ChangeObject : MonoBehaviour
     public CinemachineFreeLook playerCamera;
 
     public GameObject UIChangePart;
+    public GameObject UIChangeDone;
     public GameObject UIGetInCar;
+    public GameObject UIInfo;
 
     //public Collider ColliderWheel;
 
@@ -55,13 +57,16 @@ public class ChangeObject : MonoBehaviour
         playerCamera.Priority = 0;
         Movement.enabled = false;
         UIGetInCar.SetActive(false);
-        TaskDone();
+        UIInfo.SetActive(true);
+        UIChangeDone.SetActive(true);
     }
 
     public void TaskDone()
     {
-        CameraPart.depth = 0;
+        CameraPart.depth = -1;
         playerCamera.Priority = 1;
         Movement.enabled = true;
+        UIInfo.SetActive(false);
+        UIChangeDone.SetActive(false); 
     }
 }
