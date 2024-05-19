@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class AcceptMission : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject Marker;
+    public GameObject MissionUI;
 
-    // Update is called once per frame
-    void Update()
+    public void MissionAccepted()
     {
-        
+        MissionUI.SetActive(false);
+        Marker.SetActive(true);
     }
 }
