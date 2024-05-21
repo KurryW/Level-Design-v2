@@ -21,4 +21,9 @@ public class Loadscene : MonoBehaviour
     {
         SceneManager.LoadScene("Dragrace");
     }
+
+    public void Race()
+    {
+        SceneManager.LoadScene("Dragrace");
+    }
 }
