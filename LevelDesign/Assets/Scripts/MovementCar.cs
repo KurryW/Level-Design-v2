@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MovementCar : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class MovementCar : MonoBehaviour
 
     WheelControl[] wheels;
     Rigidbody rigidBody;
+
+    public TMP_Text speedText;
 
     // Start is called before the first frame update
     void Start()
@@ -79,5 +82,7 @@ public class MovementCar : MonoBehaviour
                 wheel.WheelCollider.motorTorque = 0;
             }
         }
+
+        speedText.text = maxSpeed.ToString();
     }
 }

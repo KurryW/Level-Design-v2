@@ -16,6 +16,7 @@ public class SwitchCar : MonoBehaviour
     public Collider ColliderCar;
 
     public GameObject UICar;
+    public GameObject UISpeed;
 
     public Transform RespawnPoint;
 
@@ -63,6 +64,7 @@ public class SwitchCar : MonoBehaviour
                 InCar = true;
                 Player.SetActive(false);
                 UICar.SetActive(false);
+                UISpeed.SetActive(true);
                 MovementCar.enabled = true;
                 Debug.Log("ik zit in de auto");
             }

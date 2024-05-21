@@ -16,6 +16,7 @@ public class SwitchPlayer : MonoBehaviour
     //public Collider ColliderCar;
 
     public GameObject UICar;
+    public GameObject UISpeed;
 
     public Transform RespawnPoint;
 
@@ -48,6 +49,7 @@ public class SwitchPlayer : MonoBehaviour
             carCamera.Priority = 0;
             Player.SetActive(true);
             UICar.SetActive(false);
+            UISpeed.SetActive(false);
             Player.transform.position = RespawnPoint.transform.position;
             MovementCar.enabled = false;
             Debug.Log("ik ga de auto uit");
