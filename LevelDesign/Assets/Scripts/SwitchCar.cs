@@ -43,7 +43,7 @@ public class SwitchCar : MonoBehaviour
 
     private void OnTriggerEnter()
     {
-        if (ColliderCar.gameObject.CompareTag("Car"))
+        if (ColliderCar.tag == "Car")
         {
             CanGetInTheCar = true;
             Debug.Log("CarReady");

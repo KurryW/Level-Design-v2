@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
 
     DialogueTrigger DialogueTrigger;
+    public GameObject UIDialogue;
 
     public GameObject ChoosePartsUI;
 
@@ -50,7 +51,8 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        DialogueTrigger.UIDialogue.SetActive(false);
+        AnimatorQuest.SetBool("Talk", false);
+        UIDialogue.SetActive(false);
         ChoosePartsUI.SetActive(true);
         Debug.Log("End of conversation");
     }
