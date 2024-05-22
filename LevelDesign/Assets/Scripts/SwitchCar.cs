@@ -41,11 +41,15 @@ public class SwitchCar : MonoBehaviour
         //}
     }
 
-    private void OnTriggerEnter(Collider ColliderCar)
+    private void OnTriggerEnter()
     {
-        CanGetInTheCar = true;
-        Debug.Log("CarReady");
-        UICar.SetActive(true);
+        if (ColliderCar.gameObject.CompareTag("Car"))
+        {
+            CanGetInTheCar = true;
+            Debug.Log("CarReady");
+            UICar.SetActive(true);
+
+        }
     }
 
     private void OnTriggerExit(Collider ColliderCar)

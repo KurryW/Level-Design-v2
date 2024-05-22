@@ -1244,7 +1244,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127445949}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15799741, y: -0.30868518, z: 0.052078266, w: 0.9365032}
+  m_LocalRotation: {x: 0.15799753, y: -0.30868518, z: 0.052078303, w: 0.9365032}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2427,8 +2427,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227785905}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14839548, y: 0.00000002044741, z: -0.0000000030682752, w: 0.9889281}
-  m_LocalPosition: {x: 72.15513, y: 5.5675936, z: -59.827065}
+  m_LocalRotation: {x: 0.14839563, y: -0.00000004620075, z: 0.0000000069327477, w: 0.9889281}
+  m_LocalPosition: {x: 71.65513, y: 5.5675936, z: -58.927063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3247,7 +3247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312082767}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.123874694, y: -0.3103732, z: 0.040830918, w: 0.94162434}
+  m_LocalRotation: {x: 0.12387481, y: -0.3103732, z: 0.040830955, w: 0.94162434}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3975,8 +3975,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -802.3355, y: 421.99365}
-  m_SizeDelta: {x: 50.6407, y: 48.7691}
+  m_AnchoredPosition: {x: -802.3355, y: 420.08057}
+  m_SizeDelta: {x: 50.6407, y: 56.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438351025
 MonoBehaviour:
@@ -5830,7 +5830,7 @@ GameObject:
   - component: {fileID: 832993103}
   m_Layer: 0
   m_Name: sport_car_1_wheels (2)
-  m_TagString: Untagged
+  m_TagString: Wheel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5853,6 +5853,7 @@ MonoBehaviour:
   UIChangeDone: {fileID: 1805646365}
   UIGetInCar: {fileID: 460827511}
   UIInfo: {fileID: 2109398200}
+  ColliderWheel: {fileID: 832993102}
   Player: {fileID: 919132148182823231}
 --- !u!65 &832993102
 BoxCollider:
@@ -5873,8 +5874,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8681339, y: 0.6122899, z: 0.6079277}
-  m_Center: {x: 0.3818872, y: 0.09000001, z: 0.0287622}
+  m_Size: {x: 1.1955092, y: 0.6122899, z: 1.1609896}
+  m_Center: {x: 0.54557496, y: 0.09000002, z: 0.024840204}
 --- !u!114 &832993103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9070,7 +9071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906322742}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14093675, y: -0.3095814, z: 0.046454817, w: 0.93922216}
+  m_LocalRotation: {x: 0.14093688, y: -0.3095814, z: 0.046454865, w: 0.9392221}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10293,6 +10294,7 @@ MonoBehaviour:
   UIChangeDone: {fileID: 1110284587}
   UIGetInCar: {fileID: 460827511}
   UIInfo: {fileID: 2109398200}
+  ColliderWheel: {fileID: 0}
   Player: {fileID: 919132148182823231}
 --- !u!114 &1110284590
 MonoBehaviour:
@@ -13422,8 +13424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.16455078, y: 0.22521973}
-  m_SizeDelta: {x: 92.9999, y: 77.5623}
+  m_AnchoredPosition: {x: 0, y: 0.000021458}
+  m_SizeDelta: {x: 92.9999, y: 88.9422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410948900
 MonoBehaviour:
@@ -15592,6 +15594,7 @@ MonoBehaviour:
   UIChangeDone: {fileID: 1805646365}
   UIGetInCar: {fileID: 460827511}
   UIInfo: {fileID: 2109398200}
+  ColliderWheel: {fileID: 832993102}
   Player: {fileID: 919132148182823231}
 --- !u!1 &1684835266
 GameObject:
@@ -16247,7 +16250,7 @@ GameObject:
   - component: {fileID: 1720921366}
   m_Layer: 0
   m_Name: ColliderDoor
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18219,6 +18222,7 @@ MonoBehaviour:
   UIChangeDone: {fileID: 1801091148}
   UIGetInCar: {fileID: 460827511}
   UIInfo: {fileID: 2109398200}
+  ColliderWheel: {fileID: 0}
   Player: {fileID: 919132148182823231}
 --- !u!114 &1801091151
 MonoBehaviour:
@@ -18451,6 +18455,7 @@ MonoBehaviour:
   UIChangeDone: {fileID: 1805646365}
   UIGetInCar: {fileID: 460827511}
   UIInfo: {fileID: 2109398200}
+  ColliderWheel: {fileID: 0}
   Player: {fileID: 919132148182823231}
 --- !u!114 &1805646368
 MonoBehaviour:
@@ -19635,7 +19640,7 @@ GameObject:
   - component: {fileID: 1928419793}
   m_Layer: 0
   m_Name: Quest
-  m_TagString: Untagged
+  m_TagString: Quest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19669,15 +19674,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 
+    name: John Parts
     sentences:
     - Hey Marcus! Glad you came. I've got somehing for ya.
     - I've got 2 parts for your car. But I want something in return. You need to
       race for me and win.
     - Pick one part and race baby!
   UIButton: {fileID: 1531664966}
-  ColliderQuest: {fileID: 1928419793}
   CameraQuest: {fileID: 964659168}
+  ColliderQuest: {fileID: 1928419793}
   Player: {fileID: 919132148182823231}
   UIDialogue: {fileID: 662666378}
 --- !u!65 &1928419793
@@ -20797,7 +20802,7 @@ Transform:
   m_GameObject: {fileID: 2059197208}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.3130474, z: -0, w: 0.9497375}
-  m_LocalPosition: {x: 72.15513, y: 5.5675936, z: -59.827065}
+  m_LocalPosition: {x: 71.65513, y: 5.5675936, z: -58.927063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21398,7 +21403,7 @@ Transform:
   m_GameObject: {fileID: 919132148182823231}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 72, y: 2.49, z: -55.3}
+  m_LocalPosition: {x: 71.5, y: 2.49, z: -54.4}
   m_LocalScale: {x: 2.9269, y: 2.9269, z: 2.9269}
   m_ConstrainProportionsScale: 0
   m_Children:

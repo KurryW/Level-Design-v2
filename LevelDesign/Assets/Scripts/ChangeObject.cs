@@ -14,7 +14,7 @@ public class ChangeObject : MonoBehaviour
     public GameObject UIGetInCar;
     public GameObject UIInfo;
 
-    //public Collider ColliderWheel;
+    public Collider ColliderWheel;
 
     public GameObject Player;
 
@@ -37,10 +37,14 @@ public class ChangeObject : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay()
     {
-        Debug.Log("Change Wheel");
-        UIChangePart.SetActive(true);
+        if (ColliderWheel.tag == "Wheel")
+        {
+            Debug.Log("Change Wheel");
+            UIChangePart.SetActive(true);
+
+        }
 
     }
 
