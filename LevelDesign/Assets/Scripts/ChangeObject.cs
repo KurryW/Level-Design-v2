@@ -37,9 +37,9 @@ public class ChangeObject : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay()
+    private void OnTriggerStay(Collider other)
     {
-        if (ColliderWheel.tag == "Wheel")
+        if (other.tag == "Player")
         {
             Debug.Log("Change Wheel");
             UIChangePart.SetActive(true);

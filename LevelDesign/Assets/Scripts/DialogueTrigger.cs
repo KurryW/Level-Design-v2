@@ -9,14 +9,12 @@ public class DialogueTrigger : MonoBehaviour
 
     public Camera CameraQuest;
 
-    public Collider ColliderQuest;
-
     public GameObject Player;
     public GameObject UIDialogue;
 
-    private void OnTriggerStay()
+    private void OnTriggerStay(Collider other)
     {
-        if (ColliderQuest.tag == "Quest")
+        if (other.tag == "Player")
         {
             UIButton.SetActive(true);
 

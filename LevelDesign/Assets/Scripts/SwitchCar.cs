@@ -41,9 +41,9 @@ public class SwitchCar : MonoBehaviour
         //}
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
-        if (ColliderCar.tag == "Car")
+        if (other.tag == "Player")
         {
             CanGetInTheCar = true;
             Debug.Log("CarReady");
