@@ -17,6 +17,8 @@ public class SwitchCar : MonoBehaviour
 
     public GameObject UICar;
     public GameObject UISpeed;
+    public GameObject UILights;
+    public GameObject UIGetOutCar;
 
     public Transform RespawnPoint;
 
@@ -69,6 +71,8 @@ public class SwitchCar : MonoBehaviour
                 Player.SetActive(false);
                 UICar.SetActive(false);
                 UISpeed.SetActive(true);
+                UILights.SetActive(true);
+                UIGetOutCar.SetActive(true);
                 MovementCar.enabled = true;
                 Debug.Log("ik zit in de auto");
             }

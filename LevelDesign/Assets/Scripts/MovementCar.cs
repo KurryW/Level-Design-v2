@@ -12,6 +12,8 @@ public class MovementCar : MonoBehaviour
     public float steeringRangeAtMaxSpeed = 10;
     public float centreOfGravityOffset = -1f;
 
+    public GameObject Lights;
+
     WheelControl[] wheels;
     Rigidbody rigidBody;
 
@@ -27,11 +29,20 @@ public class MovementCar : MonoBehaviour
 
         // Find all child GameObjects that have the WheelControl script attached
         wheels = GetComponentsInChildren<WheelControl>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            Lights.SetActive(true);
+        }
+        else
+        {
+            Lights.SetActive(false);
+        }
 
         float vInput = Input.GetAxis("Vertical");
         float hInput = Input.GetAxis("Horizontal");

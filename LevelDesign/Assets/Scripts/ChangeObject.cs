@@ -14,6 +14,8 @@ public class ChangeObject : MonoBehaviour
     public GameObject UIGetInCar;
     public GameObject UIInfo;
 
+    public GameObject LightWheel;
+
     public Collider ColliderWheel;
 
     public GameObject Player;
@@ -63,6 +65,7 @@ public class ChangeObject : MonoBehaviour
         UIGetInCar.SetActive(false);
         UIInfo.SetActive(true);
         UIChangeDone.SetActive(true);
+        LightWheel.SetActive(false);
     }
 
     public void TaskDone()

@@ -96,7 +96,7 @@ public class Stoplicht : MonoBehaviour
     IEnumerator WaitToFinish()
     {
         yield return new WaitForSeconds(4);
-        SceneManager.LoadScene("Map-1");
+        SceneManager.LoadScene("Eind Scene");
     }
         
     

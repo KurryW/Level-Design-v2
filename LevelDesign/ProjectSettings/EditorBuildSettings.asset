@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main menu.unity
+    guid: 939439277d3718947a0427fe6b56ce4a
+  - enabled: 1
     path: Assets/Scenes/Map-1.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/Dragrace.unity
     guid: 3facd547ce9be5947b574988154dd6c4
+  - enabled: 1
+    path: Assets/Scenes/Eind Scene.unity
+    guid: 8bbb1eade07fed24696c8d2f6ef0170a
   m_configObjects: {}
