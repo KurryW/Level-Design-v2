@@ -19,6 +19,8 @@ public class MovementCar : MonoBehaviour
 
     public TMP_Text speedText;
 
+    public AudioSource AudioSourceEngine;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,7 @@ public class MovementCar : MonoBehaviour
         // Find all child GameObjects that have the WheelControl script attached
         wheels = GetComponentsInChildren<WheelControl>();
 
+        AudioSourceEngine.Play();
     }
 
     // Update is called once per frame

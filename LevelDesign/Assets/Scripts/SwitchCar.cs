@@ -28,6 +28,8 @@ public class SwitchCar : MonoBehaviour
     public bool InCar;
     bool CanGetInTheCar = false;
 
+    public AudioSource CarAudioSource;
+
     private void Start()
     {
         MovementCar = Car.GetComponent<MovementCar>();
@@ -68,6 +70,7 @@ public class SwitchCar : MonoBehaviour
         {
             if(Input.GetKey(KeyCode.Q))
             {
+                CarAudioSource.Play();
                 carCamera.Priority = 1;
                 InCar = true;
                 Player.SetActive(false);

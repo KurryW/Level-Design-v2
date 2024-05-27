@@ -16,10 +16,13 @@ public class Movement : MonoBehaviour
 
     Animator animator;
 
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -48,10 +51,12 @@ public class Movement : MonoBehaviour
         if(horizontal != 0 || vertical != 0)
         {
             animator.SetBool("Walk", true);
+            audioSource.enabled = true;
         }
         else
         {
             animator.SetBool("Walk", false);
+            audioSource.enabled = false;
         }
     }
 }
