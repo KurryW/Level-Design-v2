@@ -35,14 +35,12 @@ public class MovementCar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftShift))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             Lights.SetActive(true);
         }
-        else
-        {
-            Lights.SetActive(false);
-        }
+
+        
 
         float vInput = Input.GetAxis("Vertical");
         float hInput = Input.GetAxis("Horizontal");

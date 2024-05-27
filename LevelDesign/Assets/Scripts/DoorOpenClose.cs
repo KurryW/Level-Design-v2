@@ -20,9 +20,9 @@ public class DoorOpenClose : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider other)
     {
-        if(Car.tag == "Car")
+        if(other.tag == "Car")
         {
             anim.SetBool("Open", true);
 

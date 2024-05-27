@@ -12,4 +12,6 @@ public class AcceptMission : MonoBehaviour
         MissionUI.SetActive(false);
         Marker.SetActive(true);
     }
+
+    
 }

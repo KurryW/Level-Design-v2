@@ -11,6 +11,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public GameObject Player;
     public GameObject UIDialogue;
+    public GameObject Marker;
 
     private void OnTriggerStay(Collider other)
     {
@@ -25,6 +26,7 @@ public class DialogueTrigger : MonoBehaviour
                 UIDialogue.SetActive(true);
                 UIButton.SetActive(false);
                 Player.SetActive(false);
+                Marker.SetActive(false);
             }
 
         }

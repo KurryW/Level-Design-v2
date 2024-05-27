@@ -12,6 +12,7 @@ public class SwitchCar : MonoBehaviour
 
     public GameObject Player;
     public GameObject Car;
+    public GameObject CarCollider;
 
     public Collider ColliderCar;
 
@@ -30,6 +31,7 @@ public class SwitchCar : MonoBehaviour
     private void Start()
     {
         MovementCar = Car.GetComponent<MovementCar>();
+        ColliderCar = CarCollider.GetComponent<BoxCollider>();
     }
 
     private void Update()
@@ -43,9 +45,9 @@ public class SwitchCar : MonoBehaviour
         //}
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Collider")
         {
             CanGetInTheCar = true;
             Debug.Log("CarReady");
@@ -54,7 +56,7 @@ public class SwitchCar : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider ColliderCar)
+    private void OnTriggerExit()
     {
         UICar.SetActive(false);
         CanGetInTheCar = false;

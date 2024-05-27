@@ -15,6 +15,7 @@ public class ChangeObject : MonoBehaviour
     public GameObject UIInfo;
 
     public GameObject LightWheel;
+    public GameObject LightWheelActive;
 
     public Collider ColliderWheel;
 
@@ -66,6 +67,7 @@ public class ChangeObject : MonoBehaviour
         UIInfo.SetActive(true);
         UIChangeDone.SetActive(true);
         LightWheel.SetActive(false);
+        LightWheelActive.SetActive(true);
     }
 
     public void TaskDone()
@@ -75,5 +77,6 @@ public class ChangeObject : MonoBehaviour
         Movement.enabled = true;
         UIInfo.SetActive(false);
         UIChangeDone.SetActive(false); 
+        LightWheelActive.SetActive(false);
     }
 }
