@@ -27,12 +27,12 @@ public class SwitchPlayer : MonoBehaviour
 
     public bool InCar;
 
-    AudioSource AudioSource;
+    public AudioSource AudioSourceEngine;
 
     private void Start()
     {
         MovementCar = GetComponent<MovementCar>();
-        AudioSource = GetComponent<AudioSource>();
+        AudioSourceEngine = GetComponentInChildren<AudioSource>();
     }
 
     private void Update()
@@ -43,6 +43,10 @@ public class SwitchPlayer : MonoBehaviour
             CanGetOutCar();
             Debug.Log("ik kan uit de auto");
         }
+        else
+        {
+            AudioSourceEngine.Stop();
+        }
     }
 
     void CanGetOutCar()
@@ -50,7 +54,6 @@ public class SwitchPlayer : MonoBehaviour
 
         if(Input.GetKey(KeyCode.E)) //&& MovementCar.speed <= 1f) 
         {
-            AudioSource.Play();
             playerCamera.Priority = 1;
             carCamera.Priority = 0;
             Player.SetActive(true);

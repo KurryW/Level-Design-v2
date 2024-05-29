@@ -4324,7 +4324,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312082767}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07036536, y: -0.31218705, z: 0.023193453, w: 0.9471273}
+  m_LocalRotation: {x: 0.07036536, y: -0.31218702, z: 0.023193453, w: 0.9471273}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24060,9 +24060,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   motorTorque: 2000
   brakeTorque: 2000
-  maxSpeed: 10
-  steeringRange: 80
-  steeringRangeAtMaxSpeed: 50
+  maxSpeed: 20
+  steeringRange: 50
+  steeringRangeAtMaxSpeed: 20
   centreOfGravityOffset: -1
   Lights: {fileID: 631906809}
   speedText: {fileID: 1971843748}
@@ -24089,6 +24089,7 @@ MonoBehaviour:
   UIGetOutCar: {fileID: 1118332153}
   RespawnPoint: {fileID: 1364009159}
   InCar: 0
+  AudioSourceEngine: {fileID: 986739521}
 --- !u!82 &1724661155
 AudioSource:
   m_ObjectHideFlags: 0
